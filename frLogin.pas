@@ -26,4 +26,7 @@ implementation
 
 {$R *.dfm}
 
+uses
+  frKoneksi;
+
 end.

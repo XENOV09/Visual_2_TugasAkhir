@@ -1,6 +1,6 @@
 object Login: TLogin
-  Left = 192
-  Top = 125
+  Left = 730
+  Top = 286
   Width = 356
   Height = 305
   Caption = 'frLogin'
