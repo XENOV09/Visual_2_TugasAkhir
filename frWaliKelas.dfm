@@ -1,9 +1,9 @@
-object Ortu: TOrtu
-  Left = 246
-  Top = 160
+object WaliKelas: TWaliKelas
+  Left = 210
+  Top = 86
   Width = 1044
-  Height = 542
-  Caption = 'Ortu'
+  Height = 541
+  Caption = 'Wali Kelas'
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -13,143 +13,129 @@ object Ortu: TOrtu
   OldCreateOrder = False
   PixelsPerInch = 96
   TextHeight = 13
-  object Label2: TLabel
-    Left = 32
-    Top = 48
-    Width = 17
+  object Label1: TLabel
+    Left = 24
+    Top = 8
+    Width = 38
     Height = 13
-    Caption = 'NIK'
+    Caption = 'NIK/NIP'
   end
-  object Label3: TLabel
-    Left = 32
-    Top = 80
+  object Label2: TLabel
+    Left = 24
+    Top = 40
     Width = 27
     Height = 13
     Caption = 'Nama'
   end
-  object Label4: TLabel
-    Left = 32
-    Top = 112
+  object Label3: TLabel
+    Left = 24
+    Top = 200
     Width = 51
     Height = 13
     Caption = 'Pendidikan'
   end
-  object Label1: TLabel
-    Left = 32
-    Top = 144
-    Width = 48
+  object Label4: TLabel
+    Left = 24
+    Top = 72
+    Width = 63
     Height = 13
-    Caption = 'Pekerjaan'
+    Caption = 'Jenis Kelamin'
   end
   object Label5: TLabel
-    Left = 32
-    Top = 208
+    Left = 24
+    Top = 104
     Width = 33
     Height = 13
     Caption = 'Alamat'
   end
   object Label6: TLabel
-    Left = 32
-    Top = 240
-    Width = 33
+    Left = 24
+    Top = 168
+    Width = 32
     Height = 13
-    Caption = 'Agama'
+    Caption = 'Matpel'
   end
   object Label7: TLabel
-    Left = 32
-    Top = 272
-    Width = 63
-    Height = 13
-    Caption = 'Jenis Kelamin'
-  end
-  object Label8: TLabel
-    Left = 32
-    Top = 304
+    Left = 24
+    Top = 232
     Width = 31
     Height = 13
     Caption = 'Status'
   end
-  object Label9: TLabel
-    Left = 32
-    Top = 176
+  object Label8: TLabel
+    Left = 24
+    Top = 136
     Width = 20
     Height = 13
     Caption = 'Telp'
   end
-  object Edit2: TEdit
-    Left = 160
-    Top = 48
+  object Edit1: TEdit
+    Left = 128
+    Top = 8
     Width = 121
     Height = 21
     TabOrder = 0
   end
-  object Edit3: TEdit
-    Left = 160
-    Top = 80
+  object Edit2: TEdit
+    Left = 128
+    Top = 40
     Width = 121
     Height = 21
     TabOrder = 1
   end
-  object ComboBox1: TComboBox
-    Left = 160
-    Top = 112
+  object Edit3: TEdit
+    Left = 128
+    Top = 104
     Width = 121
     Height = 21
-    ItemHeight = 13
     TabOrder = 2
-    Items.Strings = (
-      'SD'
-      'SMP'
-      'SMA/K'
-      'Sarjana')
   end
-  object Edit6: TEdit
-    Left = 160
-    Top = 240
+  object Edit4: TEdit
+    Left = 128
+    Top = 136
     Width = 121
     Height = 21
     TabOrder = 3
   end
-  object Edit4: TEdit
-    Left = 160
-    Top = 144
+  object Edit5: TEdit
+    Left = 128
+    Top = 168
     Width = 121
     Height = 21
     TabOrder = 4
   end
-  object ComboBox2: TComboBox
-    Left = 160
-    Top = 272
+  object Edit6: TEdit
+    Left = 128
+    Top = 200
+    Width = 121
+    Height = 21
+    TabOrder = 5
+  end
+  object ComboBox1: TComboBox
+    Left = 128
+    Top = 72
     Width = 121
     Height = 21
     ItemHeight = 13
-    TabOrder = 5
+    TabOrder = 6
     Items.Strings = (
       'Laki-laki'
       'Perempuan')
   end
-  object Edit5: TEdit
-    Left = 160
-    Top = 208
-    Width = 121
-    Height = 21
-    TabOrder = 6
-  end
-  object ComboBox3: TComboBox
-    Left = 160
-    Top = 304
+  object ComboBox2: TComboBox
+    Left = 128
+    Top = 232
     Width = 121
     Height = 21
     ItemHeight = 13
     TabOrder = 7
     Items.Strings = (
-      'hidup'
-      'meninggal'
-      'wali')
+      'aktif'
+      'nonaktif')
   end
   object Button1: TButton
-    Left = 304
-    Top = 48
+    Left = 272
+    Top = 8
     Width = 75
     Height = 25
     Caption = 'Simpan'
@@ -157,8 +143,8 @@ object Ortu: TOrtu
     OnClick = Button1Click
   end
   object Button2: TButton
-    Left = 304
-    Top = 80
+    Left = 272
+    Top = 40
     Width = 75
     Height = 25
     Caption = 'Edit'
@@ -166,8 +152,8 @@ object Ortu: TOrtu
     OnClick = Button2Click
   end
   object Button3: TButton
-    Left = 304
-    Top = 112
+    Left = 272
+    Top = 72
     Width = 75
     Height = 25
     Caption = 'Hapus'
@@ -175,8 +161,8 @@ object Ortu: TOrtu
     OnClick = Button3Click
   end
   object Button4: TButton
-    Left = 304
-    Top = 144
+    Left = 272
+    Top = 104
     Width = 75
     Height = 25
     Caption = 'Batal'
@@ -184,8 +170,8 @@ object Ortu: TOrtu
     OnClick = Button4Click
   end
   object Button5: TButton
-    Left = 304
-    Top = 176
+    Left = 272
+    Top = 136
     Width = 75
     Height = 25
     Caption = 'Laporan'
@@ -193,8 +179,8 @@ object Ortu: TOrtu
   end
   object DBGrid1: TDBGrid
     Left = 24
-    Top = 376
-    Width = 569
+    Top = 272
+    Width = 521
     Height = 120
     DataSource = DataSource1
     TabOrder = 13
@@ -205,26 +191,19 @@ object Ortu: TOrtu
     TitleFont.Style = []
     OnCellClick = DBGrid1CellClick
   end
-  object Edit1: TEdit
-    Left = 160
-    Top = 176
-    Width = 121
-    Height = 21
-    TabOrder = 14
-  end
   object ZQuery1: TZQuery
     Connection = ZConnection
     Active = True
     SQL.Strings = (
-      'select * from ortu')
+      'select * from wali_kelas')
     Params = <>
-    Left = 480
-    Top = 48
+    Left = 440
+    Top = 8
   end
   object DataSource1: TDataSource
     DataSet = ZQuery1
-    Left = 544
-    Top = 48
+    Left = 504
+    Top = 8
   end
   object ZConnection: TZConnection
     ControlsCodePage = cGET_ACP
@@ -239,7 +218,7 @@ object Ortu: TOrtu
     LibraryLocation = 
       'C:\Users\Novriyan09\Documents\Delphi Visual 2\Tugas Akhir\libmys' +
       'ql.dll'
-    Left = 416
-    Top = 48
+    Left = 376
+    Top = 8
   end
 end

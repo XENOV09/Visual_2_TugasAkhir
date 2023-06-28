@@ -59,7 +59,7 @@ type
 
 var
   Siswa: TSiswa;
-  id : string;
+    id : string;
 implementation
 
 {$R *.dfm}
@@ -90,7 +90,6 @@ end;
 
 procedure TSiswa.DBGrid1CellClick(Column: TColumn);
 var
-  id: string;
   nis: string;
   nisn: string;
   nama_siswa: string;
@@ -106,9 +105,8 @@ var
   status: string;
 begin
   id := ZQuery1.Fields[0].AsString;
-  
+
   // Mendapatkan nilai dari kolom yang dipilih
-  id := ZQuery1.FieldByName('id').AsString;
   nis := ZQuery1.FieldByName('nis').AsString;
   nisn := ZQuery1.FieldByName('nisn').AsString;
   nama_siswa := ZQuery1.FieldByName('nama_siswa').AsString;

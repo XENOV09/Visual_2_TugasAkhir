@@ -271,8 +271,8 @@ object Siswa: TSiswa
     Top = 136
     Width = 121
     Height = 21
-    Date = 37257.007645451390000000
-    Time = 37257.007645451390000000
+    Date = 0.007645451390999369
+    Time = 0.007645451390999369
     TabOrder = 18
   end
   object ComboBox4: TComboBox

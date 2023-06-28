@@ -81,7 +81,7 @@ end;
 
 procedure TOrtu.DBGrid1CellClick(Column: TColumn);
 var
-  id: string;
+
   nik: string;
   nama: string;
   pendidikan: string;
@@ -92,7 +92,8 @@ var
   jk: string;
   status: string;
 begin
-  id := ZQuery1.FieldByName('id').AsString;
+  id := ZQuery1.Fields[0].AsString;
+  
   nik := ZQuery1.FieldByName('nik').AsString;
   nama := ZQuery1.FieldByName('nama').AsString;
   pendidikan := ZQuery1.FieldByName('pendidikan').AsString;

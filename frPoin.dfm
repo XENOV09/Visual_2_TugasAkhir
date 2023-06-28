@@ -1,9 +1,9 @@
-object Kelas: TKelas
-  Left = 321
-  Top = 223
+object Poin: TPoin
+  Left = 498
+  Top = 109
   Width = 1044
   Height = 541
-  Caption = 'Kelas'
+  Caption = 'Poin'
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -13,99 +13,92 @@ object Kelas: TKelas
   OldCreateOrder = False
   PixelsPerInch = 96
   TextHeight = 13
+  object Label1: TLabel
+    Left = 24
+    Top = 48
+    Width = 50
+    Height = 13
+    Caption = 'Nama Poin'
+  end
   object Label2: TLabel
     Left = 24
-    Top = 32
-    Width = 55
+    Top = 80
+    Width = 51
     Height = 13
-    Caption = 'Nama Kelas'
+    Caption = 'Bobot Poin'
   end
   object Label3: TLabel
     Left = 24
-    Top = 56
-    Width = 24
+    Top = 112
+    Width = 47
     Height = 13
-    Caption = 'Jenis'
+    Caption = 'Jenis Poin'
   end
-  object Label4: TLabel
-    Left = 24
-    Top = 80
-    Width = 38
-    Height = 13
-    Caption = 'Jurusan'
-  end
-  object Edit2: TEdit
-    Left = 96
-    Top = 32
+  object Edit1: TEdit
+    Left = 112
+    Top = 48
     Width = 121
     Height = 21
     TabOrder = 0
   end
-  object Edit3: TEdit
-    Left = 96
-    Top = 56
+  object Edit2: TEdit
+    Left = 112
+    Top = 80
     Width = 121
     Height = 21
     TabOrder = 1
   end
-  object Edit4: TEdit
-    Left = 96
-    Top = 80
-    Width = 121
-    Height = 21
-    TabOrder = 2
-  end
   object Button1: TButton
-    Left = 232
-    Top = 32
+    Left = 264
+    Top = 48
     Width = 75
     Height = 25
     Caption = 'Simpan'
-    TabOrder = 3
+    TabOrder = 2
     OnClick = Button1Click
   end
   object Button2: TButton
-    Left = 312
-    Top = 32
+    Left = 352
+    Top = 48
     Width = 75
     Height = 25
     Caption = 'Edit'
-    TabOrder = 4
+    TabOrder = 3
     OnClick = Button2Click
   end
   object Button3: TButton
-    Left = 232
-    Top = 64
+    Left = 264
+    Top = 88
     Width = 75
     Height = 25
     Caption = 'Hapus'
-    TabOrder = 5
+    TabOrder = 4
     OnClick = Button3Click
   end
   object Button4: TButton
-    Left = 272
-    Top = 96
+    Left = 352
+    Top = 88
     Width = 75
     Height = 25
-    Caption = 'Clear'
-    TabOrder = 6
+    Caption = 'Batal'
+    TabOrder = 5
     OnClick = Button4Click
   end
   object Button5: TButton
-    Left = 312
-    Top = 64
+    Left = 304
+    Top = 128
     Width = 75
     Height = 25
     Caption = 'Laporan'
-    TabOrder = 7
+    TabOrder = 6
   end
   object DBGrid1: TDBGrid
     Left = 24
-    Top = 136
-    Width = 369
+    Top = 168
+    Width = 505
     Height = 120
     DataSource = DataSource1
-    TabOrder = 8
+    TabOrder = 7
     TitleFont.Charset = DEFAULT_CHARSET
     TitleFont.Color = clWindowText
     TitleFont.Height = -11
@@ -113,19 +106,30 @@ object Kelas: TKelas
     TitleFont.Style = []
     OnCellClick = DBGrid1CellClick
   end
+  object ComboBox1: TComboBox
+    Left = 112
+    Top = 112
+    Width = 121
+    Height = 21
+    ItemHeight = 13
+    TabOrder = 8
+    Items.Strings = (
+      'prestasi'
+      'pelanggaran')
+  end
   object ZQuery1: TZQuery
     Connection = ZConnection
     Active = True
     SQL.Strings = (
-      'select * from kelas')
+      'select * from poin')
     Params = <>
-    Left = 504
-    Top = 24
+    Left = 528
+    Top = 48
   end
   object DataSource1: TDataSource
     DataSet = ZQuery1
-    Left = 568
-    Top = 24
+    Left = 592
+    Top = 48
   end
   object ZConnection: TZConnection
     ControlsCodePage = cGET_ACP
@@ -140,7 +144,7 @@ object Kelas: TKelas
     LibraryLocation = 
       'C:\Users\Novriyan09\Documents\Delphi Visual 2\Tugas Akhir\libmys' +
       'ql.dll'
-    Left = 440
-    Top = 32
+    Left = 464
+    Top = 48
   end
 end
