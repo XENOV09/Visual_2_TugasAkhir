@@ -365,7 +365,7 @@ object WaliKelas: TWaliKelas
   object frxDBDataset1: TfrxDBDataset
     UserName = 'frxDBDataset1'
     CloseDataSource = False
-    DataSource = DataSource1
+    DataSet = ZQuery1
     BCDToCurrency = False
     Left = 504
     Top = 64
