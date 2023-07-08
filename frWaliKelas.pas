@@ -5,7 +5,7 @@ interface
 uses
   Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
   Dialogs, StdCtrls, Grids, DBGrids, ZAbstractConnection, ZConnection, DB,
-  ZAbstractRODataset, ZAbstractDataset, ZDataset;
+  ZAbstractRODataset, ZAbstractDataset, ZDataset, frxClass, frxDBSet;
 
 type
   TWaliKelas = class(TForm)
@@ -34,11 +34,14 @@ type
     DataSource1: TDataSource;
     ZConnection: TZConnection;
     DBGrid1: TDBGrid;
+    frxReport1: TfrxReport;
+    frxDBDataset1: TfrxDBDataset;
     procedure Button1Click(Sender: TObject);
     procedure Button2Click(Sender: TObject);
     procedure DBGrid1CellClick(Column: TColumn);
     procedure Button3Click(Sender: TObject);
     procedure Button4Click(Sender: TObject);
+    procedure Button5Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -130,6 +133,11 @@ begin
   Edit6.Text := '';
   ComboBox1.ItemIndex := -1;
   ComboBox2.ItemIndex := -1;
+end;
+
+procedure TWaliKelas.Button5Click(Sender: TObject);
+begin
+  frxReport1.ShowReport();
 end;
 
 end.

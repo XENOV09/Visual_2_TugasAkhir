@@ -176,6 +176,7 @@ object WaliKelas: TWaliKelas
     Height = 25
     Caption = 'Laporan'
     TabOrder = 12
+    OnClick = Button5Click
   end
   object DBGrid1: TDBGrid
     Left = 24
@@ -220,5 +221,47 @@ object WaliKelas: TWaliKelas
       'ql.dll'
     Left = 376
     Top = 8
+  end
+  object frxReport1: TfrxReport
+    Version = '4.12.6'
+    DotMatrixReport = False
+    IniFile = '\Software\Fast Reports'
+    PreviewOptions.Buttons = [pbPrint, pbLoad, pbSave, pbExport, pbZoom, pbFind, pbOutline, pbPageSetup, pbTools, pbEdit, pbNavigator, pbExportQuick]
+    PreviewOptions.Zoom = 1.000000000000000000
+    PrintOptions.Printer = 'Default'
+    PrintOptions.PrintOnSheet = 0
+    ReportOptions.CreateDate = 45115.654411006940000000
+    ReportOptions.LastChange = 45115.654411006940000000
+    ScriptLanguage = 'PascalScript'
+    ScriptText.Strings = (
+      'begin'
+      ''
+      'end.')
+    Left = 376
+    Top = 56
+    Datasets = <>
+    Variables = <>
+    Style = <>
+    object Data: TfrxDataPage
+      Height = 1000.000000000000000000
+      Width = 1000.000000000000000000
+    end
+    object Page1: TfrxReportPage
+      PaperWidth = 216.000000000000000000
+      PaperHeight = 279.000000000000000000
+      PaperSize = 1
+      LeftMargin = 10.000000000000000000
+      RightMargin = 10.000000000000000000
+      TopMargin = 10.000000000000000000
+      BottomMargin = 10.000000000000000000
+    end
+  end
+  object frxDBDataset1: TfrxDBDataset
+    UserName = 'frxDBDataset1'
+    CloseDataSource = False
+    DataSource = DataSource1
+    BCDToCurrency = False
+    Left = 504
+    Top = 64
   end
 end

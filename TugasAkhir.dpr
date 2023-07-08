@@ -6,16 +6,20 @@ uses
   frSiswa in 'frSiswa.pas' {Siswa},
   frKelas in 'frKelas.pas' {Kelas},
   frOrtu in 'frOrtu.pas' {Ortu},
-  frPoin in 'frPoin.pas' {Poin};
+  frPoin in 'frPoin.pas' {Poin},
+  frWaliKelas in 'frWaliKelas.pas' {WaliKelas},
+  frHubungan in 'frHubungan.pas' {Hubungan};
 
 {$R *.res}
 
 begin
   Application.Initialize;
-  Application.CreateForm(TKelas, Kelas);
+  Application.CreateForm(TWaliKelas, WaliKelas);
   Application.CreateForm(TSiswa, Siswa);
-  Application.CreateForm(TPoin, Poin);
   Application.CreateForm(TOrtu, Ortu);
+  Application.CreateForm(TKelas, Kelas);
+  Application.CreateForm(TPoin, Poin);
   Application.CreateForm(TLogin, Login);
+  Application.CreateForm(THubungan, Hubungan);
   Application.Run;
 end.
