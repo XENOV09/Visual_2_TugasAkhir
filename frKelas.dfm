@@ -98,6 +98,7 @@ object Kelas: TKelas
     Height = 25
     Caption = 'Laporan'
     TabOrder = 7
+    OnClick = Button5Click
   end
   object DBGrid1: TDBGrid
     Left = 24

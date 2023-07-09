@@ -8,18 +8,20 @@ uses
   frOrtu in 'frOrtu.pas' {Ortu},
   frPoin in 'frPoin.pas' {Poin},
   frWaliKelas in 'frWaliKelas.pas' {WaliKelas},
-  frHubungan in 'frHubungan.pas' {Hubungan};
+  frHubungan in 'frHubungan.pas' {Hubungan},
+  frMenu in 'frMenu.pas' {Menu_utama};
 
 {$R *.res}
 
 begin
   Application.Initialize;
+  Application.CreateForm(TLogin, Login);
   Application.CreateForm(TWaliKelas, WaliKelas);
   Application.CreateForm(TSiswa, Siswa);
   Application.CreateForm(TOrtu, Ortu);
   Application.CreateForm(TKelas, Kelas);
   Application.CreateForm(TPoin, Poin);
-  Application.CreateForm(TLogin, Login);
   Application.CreateForm(THubungan, Hubungan);
+  Application.CreateForm(TMenu_utama, Menu_utama);
   Application.Run;
 end.

@@ -32,6 +32,7 @@ type
     procedure DBGrid1CellClick(Column: TColumn);
     procedure Button2Click(Sender: TObject);
     procedure Button4Click(Sender: TObject);
+    procedure Button5Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -106,6 +107,11 @@ begin
 Edit2.Text := '';
 Edit3.Text := '';
 Edit4.Text := '';
+end;
+
+procedure TKelas.Button5Click(Sender: TObject);
+begin
+  frxReport1.ShowReport();
 end;
 
 end.

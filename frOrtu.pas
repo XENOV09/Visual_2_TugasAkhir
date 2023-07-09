@@ -43,6 +43,7 @@ type
     procedure DBGrid1CellClick(Column: TColumn);
     procedure Button3Click(Sender: TObject);
     procedure Button4Click(Sender: TObject);
+    procedure Button5Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -144,5 +145,10 @@ begin
   ComboBox2.ItemIndex := -1;
   ComboBox3.ItemIndex := -1;
 end;  
+
+procedure TOrtu.Button5Click(Sender: TObject);
+begin
+  frxReport1.ShowReport();
+end;
 
 end.

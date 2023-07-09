@@ -28,6 +28,7 @@ type
     ZConnection: TZConnection;
     frxReport1: TfrxReport;
     frxDBDataset1: TfrxDBDataset;
+    procedure Button5Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -40,5 +41,10 @@ var
 implementation
 
 {$R *.dfm}
+
+procedure THubungan.Button5Click(Sender: TObject);
+begin
+  frxReport1.ShowReport();
+end;
 
 end.

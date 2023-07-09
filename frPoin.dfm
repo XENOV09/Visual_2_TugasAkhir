@@ -91,6 +91,7 @@ object Poin: TPoin
     Height = 25
     Caption = 'Laporan'
     TabOrder = 6
+    OnClick = Button5Click
   end
   object DBGrid1: TDBGrid
     Left = 24

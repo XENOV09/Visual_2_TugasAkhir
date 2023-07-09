@@ -108,6 +108,7 @@ object Hubungan: THubungan
     Height = 25
     Caption = 'Laporan'
     TabOrder = 8
+    OnClick = Button5Click
   end
   object DBGrid1: TDBGrid
     Left = 24

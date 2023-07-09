@@ -1,6 +1,6 @@
 object WaliKelas: TWaliKelas
-  Left = 210
-  Top = 86
+  Left = 205
+  Top = 133
   Width = 1044
   Height = 541
   Caption = 'Wali Kelas'

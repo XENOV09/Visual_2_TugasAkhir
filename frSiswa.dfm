@@ -217,6 +217,7 @@ object Siswa: TSiswa
     Height = 25
     Caption = 'Laporan'
     TabOrder = 13
+    OnClick = Button5Click
   end
   object DBGrid1: TDBGrid
     Left = 16
