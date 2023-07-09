@@ -131,10 +131,13 @@ end;
 
 procedure THubungan.Button4Click(Sender: TObject);
 begin
-  c1.ItemIndex := -1;
-  c2.ItemIndex := -1;
-  c3.ItemIndex := -1;
-  Edit4.Text := '';
+c1.Clear;
+c1.ItemIndex := -1;
+c2.Clear;
+c2.ItemIndex := -1;
+c3.Clear;
+c3.ItemIndex := -1;
+Edit4.Text := '';
 end;
 
 end.

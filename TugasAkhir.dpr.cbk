@@ -17,13 +17,13 @@ uses
 begin
   Application.Initialize;
   Application.CreateForm(TRiwayat, Riwayat);
+  Application.CreateForm(THubungan, Hubungan);
   Application.CreateForm(TLogin, Login);
   Application.CreateForm(TWaliKelas, WaliKelas);
   Application.CreateForm(TSiswa, Siswa);
   Application.CreateForm(TOrtu, Ortu);
   Application.CreateForm(TKelas, Kelas);
   Application.CreateForm(TPoin, Poin);
-  Application.CreateForm(THubungan, Hubungan);
   Application.CreateForm(TMenu_utama, Menu_utama);
   Application.Run;
 end.

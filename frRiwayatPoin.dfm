@@ -1,6 +1,6 @@
 object Riwayat: TRiwayat
-  Left = 192
-  Top = 125
+  Left = 245
+  Top = 196
   Width = 1044
   Height = 540
   Caption = 'Riwayat Poin'
@@ -11,6 +11,7 @@ object Riwayat: TRiwayat
   Font.Name = 'Tahoma'
   Font.Style = []
   OldCreateOrder = False
+  OnCreate = FormCreate
   PixelsPerInch = 96
   TextHeight = 13
   object l1: TLabel
@@ -117,79 +118,63 @@ object Riwayat: TRiwayat
     Font.Style = []
     ParentFont = False
   end
-  object Edit1: TEdit
-    Left = 464
-    Top = 48
-    Width = 161
-    Height = 21
-    TabOrder = 0
-  end
-  object Edit2: TEdit
-    Left = 464
-    Top = 88
-    Width = 161
-    Height = 21
-    TabOrder = 1
-  end
-  object b1: TButton
-    Left = 16
-    Top = 200
-    Width = 89
-    Height = 49
-    Caption = 'BARU'
-    TabOrder = 2
-  end
   object b2: TButton
-    Left = 120
-    Top = 200
+    Left = 144
+    Top = 208
     Width = 89
     Height = 49
     Caption = 'SIMPAN'
-    TabOrder = 3
+    TabOrder = 0
+    OnClick = b2Click
   end
   object b3: TButton
-    Left = 224
-    Top = 200
+    Left = 248
+    Top = 208
     Width = 89
     Height = 49
     Caption = 'EDIT'
-    TabOrder = 4
+    TabOrder = 1
+    OnClick = b3Click
   end
   object b4: TButton
-    Left = 328
-    Top = 200
+    Left = 352
+    Top = 208
     Width = 89
     Height = 49
     Caption = 'HAPUS'
-    TabOrder = 5
+    TabOrder = 2
+    OnClick = b4Click
   end
   object b5: TButton
-    Left = 432
-    Top = 200
+    Left = 456
+    Top = 208
     Width = 89
     Height = 49
     Caption = 'BATAL'
-    TabOrder = 6
+    TabOrder = 3
+    OnClick = b5Click
   end
   object dg1: TDBGrid
     Left = 16
     Top = 268
-    Width = 609
+    Width = 633
     Height = 169
-    TabOrder = 7
+    DataSource = DataSource1
+    TabOrder = 4
     TitleFont.Charset = DEFAULT_CHARSET
     TitleFont.Color = clWindowText
     TitleFont.Height = -11
     TitleFont.Name = 'Tahoma'
     TitleFont.Style = []
+    OnCellClick = dg1CellClick
   end
   object b6: TButton
-    Left = 536
-    Top = 200
+    Left = 560
+    Top = 208
     Width = 89
     Height = 49
     Caption = 'LAPORAN'
-    TabOrder = 8
+    TabOrder = 5
   end
   object c1: TComboBox
     Left = 152
@@ -197,7 +182,7 @@ object Riwayat: TRiwayat
     Width = 161
     Height = 21
     ItemHeight = 13
-    TabOrder = 9
+    TabOrder = 6
     Items.Strings = (
       '')
   end
@@ -207,7 +192,7 @@ object Riwayat: TRiwayat
     Width = 161
     Height = 21
     ItemHeight = 13
-    TabOrder = 10
+    TabOrder = 7
     Items.Strings = (
       '')
   end
@@ -217,7 +202,7 @@ object Riwayat: TRiwayat
     Width = 161
     Height = 21
     ItemHeight = 13
-    TabOrder = 11
+    TabOrder = 8
     Items.Strings = (
       '')
   end
@@ -227,7 +212,7 @@ object Riwayat: TRiwayat
     Width = 161
     Height = 21
     ItemHeight = 13
-    TabOrder = 12
+    TabOrder = 9
     Items.Strings = (
       '')
   end
@@ -237,7 +222,7 @@ object Riwayat: TRiwayat
     Width = 161
     Height = 21
     ItemHeight = 13
-    TabOrder = 13
+    TabOrder = 10
     Items.Strings = (
       '')
   end
@@ -248,6 +233,131 @@ object Riwayat: TRiwayat
     Height = 21
     Date = 45105.542622997690000000
     Time = 45105.542622997690000000
-    TabOrder = 14
+    TabOrder = 11
+  end
+  object c6: TComboBox
+    Left = 464
+    Top = 48
+    Width = 161
+    Height = 21
+    ItemHeight = 13
+    TabOrder = 12
+    Items.Strings = (
+      'Ganjil'
+      'Genap')
+  end
+  object c7: TComboBox
+    Left = 464
+    Top = 88
+    Width = 161
+    Height = 21
+    ItemHeight = 13
+    TabOrder = 13
+    Items.Strings = (
+      'Aktif'
+      'Nonaktif')
+  end
+  object ZQuery1: TZQuery
+    Connection = ZConnection
+    Active = True
+    SQL.Strings = (
+      'select * from riwayat_poin')
+    Params = <>
+    Left = 712
+    Top = 8
+  end
+  object DataSource1: TDataSource
+    DataSet = ZQuery1
+    Left = 776
+    Top = 8
+  end
+  object ZConnection: TZConnection
+    ControlsCodePage = cGET_ACP
+    UTF8StringsAsWideField = False
+    AutoEncodeStrings = False
+    Connected = True
+    HostName = 'Localhost'
+    Port = 3306
+    Database = 'data_sekolah'
+    User = 'root'
+    Protocol = 'mysql'
+    LibraryLocation = 
+      'C:\Users\Novriyan09\Documents\Delphi Visual 2\Tugas Akhir\libmys' +
+      'ql.dll'
+    Left = 648
+    Top = 8
+  end
+  object ZQuery2: TZQuery
+    Connection = ZConnection
+    Active = True
+    SQL.Strings = (
+      'select * from siswa')
+    Params = <>
+    Left = 648
+    Top = 64
+  end
+  object ZQuery3: TZQuery
+    Connection = ZConnection
+    Active = True
+    SQL.Strings = (
+      'select * from poin')
+    Params = <>
+    Left = 712
+    Top = 64
+  end
+  object ZQuery4: TZQuery
+    Connection = ZConnection
+    Active = True
+    SQL.Strings = (
+      'select * from wali_kelas')
+    Params = <>
+    Left = 776
+    Top = 64
+  end
+  object ZQuery5: TZQuery
+    Connection = ZConnection
+    Active = True
+    SQL.Strings = (
+      'select * from ortu')
+    Params = <>
+    Left = 840
+    Top = 64
+  end
+  object ZQuery6: TZQuery
+    Connection = ZConnection
+    Active = True
+    SQL.Strings = (
+      'select * from kelas')
+    Params = <>
+    Left = 904
+    Top = 64
+  end
+  object frxDBDataset1: TfrxDBDataset
+    UserName = 'frxDBDataset1'
+    CloseDataSource = False
+    BCDToCurrency = False
+    Left = 680
+    Top = 328
+  end
+  object frxReport1: TfrxReport
+    Version = '4.12.6'
+    DotMatrixReport = False
+    IniFile = '\Software\Fast Reports'
+    PreviewOptions.Buttons = [pbPrint, pbLoad, pbSave, pbExport, pbZoom, pbFind, pbOutline, pbPageSetup, pbTools, pbEdit, pbNavigator, pbExportQuick]
+    PreviewOptions.Zoom = 1.000000000000000000
+    PrintOptions.Printer = 'Default'
+    PrintOptions.PrintOnSheet = 0
+    ReportOptions.CreateDate = 45116.843396516200000000
+    ReportOptions.LastChange = 45116.843396516200000000
+    ScriptLanguage = 'PascalScript'
+    ScriptText.Strings = (
+      'begin'
+      ''
+      'end.')
+    Left = 680
+    Top = 264
+    Datasets = <>
+    Variables = <>
+    Style = <>
   end
 end
