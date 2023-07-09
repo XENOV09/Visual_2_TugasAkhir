@@ -21,21 +21,27 @@ object Menu_utama: TMenu_utama
       Caption = 'FORM'
       object SISWA1: TMenuItem
         Caption = 'SISWA'
+        OnClick = SISWA1Click
       end
       object WALIKELAS1: TMenuItem
         Caption = 'WALIKELAS'
+        OnClick = WALIKELAS1Click
       end
       object ORANGTUA1: TMenuItem
         Caption = 'ORANG TUA'
+        OnClick = ORANGTUA1Click
       end
       object POIN1: TMenuItem
         Caption = 'POIN'
+        OnClick = POIN1Click
       end
       object KELAS1: TMenuItem
         Caption = 'KELAS'
+        OnClick = KELAS1Click
       end
       object HUBUNGAN1: TMenuItem
         Caption = 'HUBUNGAN'
+        OnClick = HUBUNGAN1Click
       end
     end
   end
