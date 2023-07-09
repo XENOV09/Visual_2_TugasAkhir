@@ -16,9 +16,9 @@ uses
 
 begin
   Application.Initialize;
+  Application.CreateForm(TLogin, Login);
   Application.CreateForm(TRiwayat, Riwayat);
   Application.CreateForm(THubungan, Hubungan);
-  Application.CreateForm(TLogin, Login);
   Application.CreateForm(TWaliKelas, WaliKelas);
   Application.CreateForm(TSiswa, Siswa);
   Application.CreateForm(TOrtu, Ortu);

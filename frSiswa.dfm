@@ -1,7 +1,7 @@
 object Siswa: TSiswa
   Left = 308
   Top = 84
-  Width = 957
+  Width = 956
   Height = 648
   Caption = 'frSiswa'
   Color = clBtnFace

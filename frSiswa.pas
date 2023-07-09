@@ -124,6 +124,7 @@ begin
   telp := ZQuery1.FieldByName('telp').AsString;
   hp := ZQuery1.FieldByName('hp').AsString;
   status := ZQuery1.FieldByName('status').AsString;
+  DateTimePicker1.Date:=ZQuery1.Fields[6].AsDateTime;
 
   // Menampilkan nilai ke dalam TEdit atau TComboBox
   Edit2.Text := nis;
