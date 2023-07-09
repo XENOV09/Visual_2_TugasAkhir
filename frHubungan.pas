@@ -5,7 +5,7 @@ interface
 uses
   Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
   Dialogs, StdCtrls, Grids, DBGrids, ZAbstractConnection, ZConnection, DB,
-  ZAbstractRODataset, ZAbstractDataset, ZDataset;
+  ZAbstractRODataset, ZAbstractDataset, ZDataset, frxClass, frxDBSet;
 
 type
   THubungan = class(TForm)
@@ -26,6 +26,8 @@ type
     ZQuery1: TZQuery;
     DataSource1: TDataSource;
     ZConnection: TZConnection;
+    frxReport1: TfrxReport;
+    frxDBDataset1: TfrxDBDataset;
   private
     { Private declarations }
   public

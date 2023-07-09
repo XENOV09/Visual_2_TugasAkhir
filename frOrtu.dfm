@@ -251,7 +251,7 @@ object Ortu: TOrtu
     PrintOptions.Printer = 'Default'
     PrintOptions.PrintOnSheet = 0
     ReportOptions.CreateDate = 45115.654411006900000000
-    ReportOptions.LastChange = 45116.739944143500000000
+    ReportOptions.LastChange = 45116.742869803240000000
     ScriptLanguage = 'PascalScript'
     ScriptText.Strings = (
       'begin'
@@ -294,7 +294,7 @@ object Ortu: TOrtu
           Font.Name = 'Arial'
           Font.Style = []
           Memo.UTF8 = (
-            'LAPORAN WALIKELAS')
+            'LAPORAN ORANG TUA')
           ParentFont = False
         end
       end

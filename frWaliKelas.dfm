@@ -231,14 +231,14 @@ object WaliKelas: TWaliKelas
     PrintOptions.Printer = 'Default'
     PrintOptions.PrintOnSheet = 0
     ReportOptions.CreateDate = 45115.654411006900000000
-    ReportOptions.LastChange = 45115.681671597200000000
+    ReportOptions.LastChange = 45116.733665034700000000
     ScriptLanguage = 'PascalScript'
     ScriptText.Strings = (
       'begin'
       ''
       'end.')
     Left = 376
-    Top = 56
+    Top = 64
     Datasets = <
       item
         DataSet = frxDBDataset1
@@ -263,9 +263,9 @@ object WaliKelas: TWaliKelas
         Top = 18.897650000000000000
         Width = 740.409927000000000000
         object Memo15: TfrxMemoView
-          Left = 325.039580000000000000
+          Left = 291.023810000000000000
           Top = 3.779530000000000000
-          Width = 128.504020000000000000
+          Width = 151.181200000000000000
           Height = 18.897650000000000000
           ShowHint = False
           Font.Charset = DEFAULT_CHARSET
@@ -274,7 +274,7 @@ object WaliKelas: TWaliKelas
           Font.Name = 'Arial'
           Font.Style = []
           Memo.UTF8 = (
-            'LAPORAN SISWA')
+            'LAPORAN WALIKELAS')
           ParentFont = False
         end
       end
@@ -284,6 +284,7 @@ object WaliKelas: TWaliKelas
         Width = 740.409927000000000000
         object Memo8: TfrxMemoView
           Left = 7.559060000000000000
+          Top = 3.779530000000000000
           Width = 75.590600000000000000
           Height = 18.897650000000000000
           ShowHint = False
@@ -291,9 +292,9 @@ object WaliKelas: TWaliKelas
           DataSetName = 'frxDBDataset1'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clBlack
-          Font.Height = -13
+          Font.Height = -11
           Font.Name = 'Arial'
-          Font.Style = []
+          Font.Style = [fsBold]
           Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
           Memo.UTF8 = (
             'ID')
@@ -301,6 +302,7 @@ object WaliKelas: TWaliKelas
         end
         object Memo9: TfrxMemoView
           Left = 83.149660000000000000
+          Top = 3.779530000000000000
           Width = 94.488250000000000000
           Height = 18.897650000000000000
           ShowHint = False
@@ -308,9 +310,9 @@ object WaliKelas: TWaliKelas
           DataSetName = 'frxDBDataset1'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clBlack
-          Font.Height = -13
+          Font.Height = -11
           Font.Name = 'Arial'
-          Font.Style = []
+          Font.Style = [fsBold]
           Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
           Memo.UTF8 = (
             'NIK')
@@ -318,6 +320,7 @@ object WaliKelas: TWaliKelas
         end
         object Memo10: TfrxMemoView
           Left = 177.637910000000000000
+          Top = 3.779530000000000000
           Width = 94.488250000000000000
           Height = 18.897650000000000000
           ShowHint = False
@@ -325,9 +328,9 @@ object WaliKelas: TWaliKelas
           DataSetName = 'frxDBDataset1'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clBlack
-          Font.Height = -13
+          Font.Height = -11
           Font.Name = 'Arial'
-          Font.Style = []
+          Font.Style = [fsBold]
           Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
           Memo.UTF8 = (
             'NAMA')
@@ -335,6 +338,7 @@ object WaliKelas: TWaliKelas
         end
         object Memo11: TfrxMemoView
           Left = 272.126160000000000000
+          Top = 3.779530000000000000
           Width = 94.488250000000000000
           Height = 18.897650000000000000
           ShowHint = False
@@ -342,9 +346,9 @@ object WaliKelas: TWaliKelas
           DataSetName = 'frxDBDataset1'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clBlack
-          Font.Height = -13
+          Font.Height = -11
           Font.Name = 'Arial'
-          Font.Style = []
+          Font.Style = [fsBold]
           Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
           Memo.UTF8 = (
             'JENIS KELAMIN')
@@ -352,6 +356,7 @@ object WaliKelas: TWaliKelas
         end
         object Memo12: TfrxMemoView
           Left = 366.614410000000000000
+          Top = 3.779530000000000000
           Width = 94.488250000000000000
           Height = 18.897650000000000000
           ShowHint = False
@@ -359,9 +364,9 @@ object WaliKelas: TWaliKelas
           DataSetName = 'frxDBDataset1'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clBlack
-          Font.Height = -13
+          Font.Height = -11
           Font.Name = 'Arial'
-          Font.Style = []
+          Font.Style = [fsBold]
           Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
           Memo.UTF8 = (
             'ALAMAT')
@@ -369,6 +374,7 @@ object WaliKelas: TWaliKelas
         end
         object Memo13: TfrxMemoView
           Left = 461.102660000000000000
+          Top = 3.779530000000000000
           Width = 94.488250000000000000
           Height = 18.897650000000000000
           ShowHint = False
@@ -376,9 +382,9 @@ object WaliKelas: TWaliKelas
           DataSetName = 'frxDBDataset1'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clBlack
-          Font.Height = -13
+          Font.Height = -11
           Font.Name = 'Arial'
-          Font.Style = []
+          Font.Style = [fsBold]
           Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
           Memo.UTF8 = (
             'TELP')
@@ -386,6 +392,7 @@ object WaliKelas: TWaliKelas
         end
         object Memo14: TfrxMemoView
           Left = 555.590910000000000000
+          Top = 3.779530000000000000
           Width = 94.488250000000000000
           Height = 18.897650000000000000
           ShowHint = False
@@ -393,9 +400,9 @@ object WaliKelas: TWaliKelas
           DataSetName = 'frxDBDataset1'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clBlack
-          Font.Height = -13
+          Font.Height = -11
           Font.Name = 'Arial'
-          Font.Style = []
+          Font.Style = [fsBold]
           Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
           Memo.UTF8 = (
             'MATPEL')
@@ -403,7 +410,7 @@ object WaliKelas: TWaliKelas
         end
       end
       object MasterData1: TfrxMasterData
-        Height = 26.456710000000000000
+        Height = 18.897650000000000000
         Top = 147.401670000000000000
         Width = 740.409927000000000000
         DataSet = frxDBDataset1
@@ -411,7 +418,6 @@ object WaliKelas: TWaliKelas
         RowCount = 0
         object Memo1: TfrxMemoView
           Left = 7.559060000000000000
-          Top = 7.559060000000000000
           Width = 75.590600000000000000
           Height = 18.897650000000000000
           ShowHint = False
@@ -430,7 +436,6 @@ object WaliKelas: TWaliKelas
         end
         object Memo2: TfrxMemoView
           Left = 83.149660000000000000
-          Top = 7.559060000000000000
           Width = 94.488250000000000000
           Height = 18.897650000000000000
           ShowHint = False
@@ -449,7 +454,6 @@ object WaliKelas: TWaliKelas
         end
         object Memo3: TfrxMemoView
           Left = 177.637910000000000000
-          Top = 7.559060000000000000
           Width = 94.488250000000000000
           Height = 18.897650000000000000
           ShowHint = False
@@ -468,7 +472,6 @@ object WaliKelas: TWaliKelas
         end
         object Memo4: TfrxMemoView
           Left = 272.126160000000000000
-          Top = 7.559060000000000000
           Width = 94.488250000000000000
           Height = 18.897650000000000000
           ShowHint = False
@@ -487,7 +490,6 @@ object WaliKelas: TWaliKelas
         end
         object Memo5: TfrxMemoView
           Left = 366.614410000000000000
-          Top = 7.559060000000000000
           Width = 94.488250000000000000
           Height = 18.897650000000000000
           ShowHint = False
@@ -506,7 +508,6 @@ object WaliKelas: TWaliKelas
         end
         object Memo6: TfrxMemoView
           Left = 461.102660000000000000
-          Top = 7.559060000000000000
           Width = 94.488250000000000000
           Height = 18.897650000000000000
           ShowHint = False
@@ -525,7 +526,6 @@ object WaliKelas: TWaliKelas
         end
         object Memo7: TfrxMemoView
           Left = 555.590910000000000000
-          Top = 7.559060000000000000
           Width = 94.488250000000000000
           Height = 18.897650000000000000
           ShowHint = False
