@@ -16,12 +16,14 @@ type
     POIN1: TMenuItem;
     KELAS1: TMenuItem;
     HUBUNGAN1: TMenuItem;
+    RIWAYATPOIN1: TMenuItem;
     procedure SISWA1Click(Sender: TObject);
     procedure WALIKELAS1Click(Sender: TObject);
     procedure ORANGTUA1Click(Sender: TObject);
     procedure POIN1Click(Sender: TObject);
     procedure KELAS1Click(Sender: TObject);
     procedure HUBUNGAN1Click(Sender: TObject);
+    procedure RIWAYATPOIN1Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -33,7 +35,8 @@ var
 
 implementation
 
-uses frSiswa, frWaliKelas, frOrtu, frPoin, frKelas, frHubungan;
+uses frSiswa, frWaliKelas, frOrtu, frPoin, frKelas, frHubungan,
+  frRiwayatPoin;
 
 {$R *.dfm}
 
@@ -65,6 +68,11 @@ end;
 procedure TMenu_utama.HUBUNGAN1Click(Sender: TObject);
 begin
 Hubungan.showmodal;
+end;
+
+procedure TMenu_utama.RIWAYATPOIN1Click(Sender: TObject);
+begin
+Riwayat.showmodal;
 end;
 
 end.

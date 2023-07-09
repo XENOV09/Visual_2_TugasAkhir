@@ -43,6 +43,10 @@ object Menu_utama: TMenu_utama
         Caption = 'HUBUNGAN'
         OnClick = HUBUNGAN1Click
       end
+      object RIWAYATPOIN1: TMenuItem
+        Caption = 'RIWAYAT POIN'
+        OnClick = RIWAYATPOIN1Click
+      end
     end
   end
 end

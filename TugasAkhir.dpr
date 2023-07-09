@@ -9,7 +9,8 @@ uses
   frPoin in 'frPoin.pas' {Poin},
   frWaliKelas in 'frWaliKelas.pas' {WaliKelas},
   frHubungan in 'frHubungan.pas' {Hubungan},
-  frMenu in 'frMenu.pas' {Menu_utama};
+  frMenu in 'frMenu.pas' {Menu_utama},
+  frRiwayatPoin in 'frRiwayatPoin.pas' {Riwayat};
 
 {$R *.res}
 
@@ -23,5 +24,6 @@ begin
   Application.CreateForm(TPoin, Poin);
   Application.CreateForm(THubungan, Hubungan);
   Application.CreateForm(TMenu_utama, Menu_utama);
+  Application.CreateForm(TRiwayat, Riwayat);
   Application.Run;
 end.
