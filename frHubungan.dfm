@@ -1,6 +1,6 @@
 object Hubungan: THubungan
-  Left = 192
-  Top = 125
+  Left = 234
+  Top = 182
   Width = 1044
   Height = 540
   Caption = 'Hubungan'
@@ -11,6 +11,7 @@ object Hubungan: THubungan
   Font.Name = 'Tahoma'
   Font.Style = []
   OldCreateOrder = False
+  OnCreate = FormCreate
   PixelsPerInch = 96
   TextHeight = 13
   object Label1: TLabel
@@ -41,33 +42,12 @@ object Hubungan: THubungan
     Height = 13
     Caption = 'Keterangan'
   end
-  object Edit1: TEdit
-    Left = 168
-    Top = 32
-    Width = 121
-    Height = 21
-    TabOrder = 0
-  end
-  object Edit2: TEdit
-    Left = 168
-    Top = 64
-    Width = 121
-    Height = 21
-    TabOrder = 1
-  end
-  object Edit3: TEdit
-    Left = 168
-    Top = 96
-    Width = 121
-    Height = 21
-    TabOrder = 2
-  end
   object Edit4: TEdit
     Left = 168
     Top = 128
     Width = 121
     Height = 21
-    TabOrder = 3
+    TabOrder = 0
   end
   object Button1: TButton
     Left = 312
@@ -75,7 +55,8 @@ object Hubungan: THubungan
     Width = 75
     Height = 25
     Caption = 'Simpan'
-    TabOrder = 4
+    TabOrder = 1
+    OnClick = Button1Click
   end
   object Button2: TButton
     Left = 312
@@ -83,7 +64,8 @@ object Hubungan: THubungan
     Width = 75
     Height = 25
     Caption = 'Edit'
-    TabOrder = 5
+    TabOrder = 2
+    OnClick = Button2Click
   end
   object Button3: TButton
     Left = 312
@@ -91,7 +73,8 @@ object Hubungan: THubungan
     Width = 75
     Height = 25
     Caption = 'Hapus'
-    TabOrder = 6
+    TabOrder = 3
+    OnClick = Button3Click
   end
   object Button4: TButton
     Left = 312
@@ -99,7 +82,8 @@ object Hubungan: THubungan
     Width = 75
     Height = 25
     Caption = 'Clear'
-    TabOrder = 7
+    TabOrder = 4
+    OnClick = Button4Click
   end
   object Button5: TButton
     Left = 312
@@ -107,7 +91,7 @@ object Hubungan: THubungan
     Width = 75
     Height = 25
     Caption = 'Laporan'
-    TabOrder = 8
+    TabOrder = 5
     OnClick = Button5Click
   end
   object DBGrid1: TDBGrid
@@ -116,12 +100,41 @@ object Hubungan: THubungan
     Width = 529
     Height = 120
     DataSource = DataSource1
-    TabOrder = 9
+    TabOrder = 6
     TitleFont.Charset = DEFAULT_CHARSET
     TitleFont.Color = clWindowText
     TitleFont.Height = -11
     TitleFont.Name = 'Tahoma'
     TitleFont.Style = []
+    OnCellClick = DBGrid1CellClick
+  end
+  object c1: TComboBox
+    Left = 168
+    Top = 32
+    Width = 121
+    Height = 21
+    ItemHeight = 13
+    TabOrder = 7
+  end
+  object c2: TComboBox
+    Left = 168
+    Top = 64
+    Width = 121
+    Height = 21
+    ItemHeight = 13
+    TabOrder = 8
+  end
+  object c3: TComboBox
+    Left = 168
+    Top = 96
+    Width = 121
+    Height = 21
+    ItemHeight = 13
+    TabOrder = 9
+    Items.Strings = (
+      'kandung'
+      'angkat'
+      'wali')
   end
   object ZQuery1: TZQuery
     Connection = ZConnection
@@ -411,5 +424,23 @@ object Hubungan: THubungan
     BCDToCurrency = False
     Left = 568
     Top = 72
+  end
+  object zqry2: TZQuery
+    Connection = ZConnection
+    Active = True
+    SQL.Strings = (
+      'select * from siswa')
+    Params = <>
+    Left = 576
+    Top = 200
+  end
+  object zqry3: TZQuery
+    Connection = ZConnection
+    Active = True
+    SQL.Strings = (
+      'select * from ortu')
+    Params = <>
+    Left = 640
+    Top = 200
   end
 end
