@@ -48,6 +48,7 @@ type
     procedure dg1CellClick(Column: TColumn);
     procedure b4Click(Sender: TObject);
     procedure b5Click(Sender: TObject);
+    procedure b6Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -183,6 +184,11 @@ c6.Clear;
 c6.ItemIndex := -1;
 c7.Clear;
 c7.ItemIndex := -1;
+end;
+
+procedure TRiwayat.b6Click(Sender: TObject);
+begin
+  frxReport1.ShowReport();
 end;
 
 end.

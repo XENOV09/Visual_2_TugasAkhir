@@ -175,6 +175,7 @@ object Riwayat: TRiwayat
     Height = 49
     Caption = 'LAPORAN'
     TabOrder = 5
+    OnClick = b6Click
   end
   object c1: TComboBox
     Left = 152
